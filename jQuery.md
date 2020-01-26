@@ -67,7 +67,7 @@ $(selector).stop(stopAll,goToEnd);
 ## 获取
 
 + text() 文本内容
-+ html() 所选元素的内容，包括hteml标记
++ html() 所选元素的内容，包括html标记
 + val() 表单字段的值
 + attr(“href") 获取属性
 
