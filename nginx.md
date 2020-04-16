@@ -124,11 +124,8 @@
    #error_log  logs/error.log  info;
     
    #pid        logs/nginx.pid; # nginx进程pid存放路径
-   ————————————————
-   版权声明：本文为CSDN博主「Snow、杨」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-   原文链接：https://blog.csdn.net/qq_37345604/article/details/90034424
    ```
-
+   
 2. **events块**
 
    涉及的指令主要影响nginx服务器与用户的网络连接
