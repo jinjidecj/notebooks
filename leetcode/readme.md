@@ -511,3 +511,30 @@ max.peek()查看最大数字
 Int[] intArray = new Int[]{1,2};
 Set<Integer> set = Arrays.stream(intArray).boxed().collect(Collectors.toSet());
 ```
+### Map 转 List
+```java
+Map<Integer,Integer> map = new HashMap<>();
+map.put(1,3);
+map.put(2,4);
+List<Integer> integers = new ArrayList<>(map.values());
+```
+### String 转Char[]
+```java
+String s = "abc";
+char[] charArray = s.toCharArray();
+```
+## 例题
+### 151.翻转字符串
+使用java的语言特性或者使用双端队列/栈
+```java
+class Solution {
+    public String reverseWords(String s) {
+        // 除去开头和末尾的空白字符
+        s = s.trim();
+        // 正则匹配连续的空白字符作为分隔符分割
+        List<String> wordList = Arrays.asList(s.split("\\s+"));
+        Collections.reverse(wordList);
+        return String.join(" ", wordList);
+    }
+}
+```
